@@ -19,7 +19,6 @@ export default class Knight extends Piece {
                             if (i == k || j == t || k == t || Math.abs(k - t) > 3 || (Math.abs(k-i) == 1 && Math.abs(t-j) == 1)) {
                                 continue;
                             }
-                            console.log(k, t);
                             moves.push(Square.at(k, t));
                         }
                     }
