@@ -7,7 +7,7 @@ export default class Board {
     currentPlayer;
     board;
 
-    constructor(currentPlayer: Player) {
+    constructor(currentPlayer?: Player) {
         this.currentPlayer = currentPlayer ? currentPlayer : Player.WHITE;
         this.board = this.createBoard();
     }
